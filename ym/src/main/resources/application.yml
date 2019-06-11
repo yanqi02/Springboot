@@ -1,0 +1,23 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://47.100.127.206:3306/mtalk
+#    data-username: root
+#    data-password: 123456
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    #更新或创建
+#    show-sql: true
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+spring:
+  application:
+    name: etalk
+eureka:
+  instance:
+    prefer-ip-address: true #注册是服务使用IP地址
+  client:
+    service-url:
+      defaultZone: http://47.100.127.206:8761/eureka/
+
